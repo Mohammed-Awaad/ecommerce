@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* - Header */
+
+header {
+  margin: 0 auto 15px;
+  background-color: #16161e;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 3px solid #dd0231;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#count {
+  width: 20px;
+  height: 20px;
+  background-color: #dd0231;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  transform: translate(-8px, -15px);
+}
+
+header a {
+  color: #fff;
+}
+
+/* Main */
+
+.title {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.products {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single-product {
+  margin: 10px;
+  width: calc((100% - 80px) / 4);
+  height: 550px;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-product > img {
+  width: 200px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.single-product h3 {
+  margin-top: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.single-product a {
+  color: #55c7eb;
+  margin: 3px auto 5px;
+  transition: 0.2s;
+}
+
+.single-product a:hover {
+  color: #888;
+}
+
+.single-product > p:nth-child(4) {
+  font-size: 25px;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.single-product > p:nth-child(5) {
+  font-weight: bold;
+  margin: 0 auto 15px;
+}
+
+.single-product > button:nth-child(6) {
+  width: 120px;
+  height: 50px;
+  background-color: #dd0231;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.single-product > button:nth-child(6):hover {
+  background-color: #bd0029;
+}

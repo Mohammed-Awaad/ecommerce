@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Market</title>
+    <!-- Google Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- Link CSS File -->
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div>
+        <a href="index.html"><h1>E-Market</h1></a>
+      </div>
+      <div class="cart">
+        <a href="cart.html">
+          <span class="material-icons-outlined">shopping_cart</span>
+        </a>
+        <a href="cart.html" id="count">
+          <span>0</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <aside class="left">
+        <p id="info">CART IS EMPTY</p>
+      </aside>
+      <aside class="right">
+        <h3>Cart Totals</h3>
+        <div class="total">
+          <p>subtotal</p>
+          <p id="totalPrice">0.00 $</p>
+        </div>
+        <button>Proceed to checkout</button>
+      </aside>
+    </main>
+
+    <script src="js/cookie.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
