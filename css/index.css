@@ -42,8 +42,10 @@ header {
   height: 20px;
   background-color: #dd0231;
   border-radius: 50%;
-  text-align: center;
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
   transform: translate(-8px, -15px);
 }
 
@@ -56,7 +58,7 @@ header a {
 .title {
   width: 80%;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .products {
@@ -69,7 +71,7 @@ header a {
 .single-product {
   margin: 10px;
   width: calc((100% - 80px) / 4);
-  height: 550px;
+  height: 30rem;
   border: 1px solid #e7e7e7;
   border-radius: 3px;
   padding: 20px;
@@ -79,20 +81,20 @@ header a {
 }
 
 .single-product > img {
-  width: 200px;
-  height: 250px;
+  max-width: 100%;
+  height: 10rem;
   cursor: pointer;
 }
 
 .single-product h3 {
-  margin-top: 25px;
+  margin-top: auto;
   text-align: center;
   cursor: pointer;
 }
 
 .single-product a {
   color: #55c7eb;
-  margin: 3px auto 5px;
+  margin-top: auto;
   transition: 0.2s;
 }
 
@@ -101,15 +103,15 @@ header a {
 }
 
 .single-product > p:nth-child(4) {
-  font-size: 25px;
-  margin: 5px 0;
+  font-size: 1.6rem;
+  margin-top: auto;
   font-weight: bold;
   color: #ff0000;
 }
 
 .single-product > p:nth-child(5) {
   font-weight: bold;
-  margin: 0 auto 15px;
+  margin-top: auto;
 }
 
 .single-product > button:nth-child(6) {
@@ -121,8 +123,25 @@ header a {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  margin-top: auto;
 }
 
 .single-product > button:nth-child(6):hover {
   background-color: #bd0029;
+}
+
+@media screen and (max-width: 1200px) {
+  .single-product {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (max-width: 992px) {
+  .single-product {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .single-product {
+    width: calc(100% - 10px);
+  }
 }
